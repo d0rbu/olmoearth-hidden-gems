@@ -1,0 +1,6 @@
+.venv/
+.cache/
+__pycache__/
+.runtime/
+*.log
+web/assets/gem-*.jpg

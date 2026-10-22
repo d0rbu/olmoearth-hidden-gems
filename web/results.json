@@ -1,0 +1,2881 @@
+{
+  "title": "Earth, off the shortlist",
+  "generated_at": "2026-10-22T23:49:17Z",
+  "model": {
+    "dimensions": 128,
+    "year": 2025,
+    "weight": [
+      -0.23282568156719208,
+      -0.01308592688292265,
+      -0.16702187061309814,
+      0.05983851104974747,
+      0.05756819248199463,
+      0.00273617054335773,
+      -0.06122962757945061,
+      0.11703064292669296,
+      0.03243843838572502,
+      0.023719970136880875,
+      -0.02493457868695259,
+      -0.16257211565971375,
+      -0.07887433469295502,
+      -0.05919693410396576,
+      -0.09060671925544739,
+      0.03253640606999397,
+      -0.12024210393428802,
+      -0.10323149710893631,
+      -0.1439518928527832,
+      0.18715962767601013,
+      0.10552893579006195,
+      -0.014582903124392033,
+      -0.11839514970779419,
+      0.0041742785833776,
+      -0.16465885937213898,
+      0.11463309079408646,
+      -0.0649808943271637,
+      0.14192743599414825,
+      0.1691538691520691,
+      0.16680151224136353,
+      0.06005031615495682,
+      0.0763670951128006,
+      -0.19842562079429626,
+      -0.2084333747625351,
+      0.018177039921283722,
+      0.048124633729457855,
+      0.08846861124038696,
+      -0.036857180297374725,
+      0.059000562876462936,
+      0.02578810043632984,
+      0.07417986541986465,
+      0.06957396119832993,
+      0.10085440427064896,
+      0.07945434749126434,
+      0.0684010460972786,
+      0.21490751206874847,
+      0.12997373938560486,
+      -0.20994189381599426,
+      0.09669575095176697,
+      -0.06864883005619049,
+      -0.133463054895401,
+      0.07415771484375,
+      -0.047141123563051224,
+      0.08117368817329407,
+      0.07925909012556076,
+      -0.18473395705223083,
+      -0.0836390033364296,
+      -0.0657191053032875,
+      -0.08917301893234253,
+      0.07739674299955368,
+      0.017711656168103218,
+      -0.10374415665864944,
+      0.029814796522259712,
+      -0.021960046142339706,
+      -0.11850862950086594,
+      0.08774804323911667,
+      -0.03860362246632576,
+      0.0028940748888999224,
+      -0.05989115685224533,
+      -0.016348376870155334,
+      0.19912004470825195,
+      -0.014455659314990044,
+      0.02397928386926651,
+      -0.037321049720048904,
+      -0.02552388422191143,
+      0.056426648050546646,
+      0.06290337443351746,
+      -0.03214152529835701,
+      -0.031111769378185272,
+      0.07358114421367645,
+      -0.048434458673000336,
+      0.07333226501941681,
+      0.05010363087058067,
+      -0.05904387682676315,
+      -0.03660905361175537,
+      0.035461366176605225,
+      0.023236220702528954,
+      0.11314891278743744,
+      0.10965726524591446,
+      0.09007154405117035,
+      -0.043345287442207336,
+      0.059690121561288834,
+      0.12860600650310516,
+      0.014147329144179821,
+      0.019957248121500015,
+      -0.014498085714876652,
+      0.0029663448221981525,
+      -0.013035139068961143,
+      -0.06903203576803207,
+      -0.04990747943520546,
+      -0.0017852387391030788,
+      0.040834199637174606,
+      -0.001668555079959333,
+      0.017084352672100067,
+      0.04936424642801285,
+      0.06402308493852615,
+      0.039390429854393005,
+      0.018999993801116943,
+      0.02299993671476841,
+      0.023814739659428596,
+      -0.004351639188826084,
+      0.01704839989542961,
+      0.061531804502010345,
+      -0.009636249393224716,
+      0.00480478722602129,
+      0.028588946908712387,
+      -0.1260644644498825,
+      -0.040976449847221375,
+      -0.05327807739377022,
+      -0.01912546157836914,
+      0.0926843136548996,
+      -0.03431194648146629,
+      -0.11161389201879501,
+      0.052684236317873,
+      -0.11142335832118988,
+      0.02587224170565605,
+      0.05978112667798996,
+      -0.06398413330316544
+    ],
+    "intercept": -0.134835883975029,
+    "formula": "unit(mean(unit(scenic)) - mean(unit(ordinary))); score = unit(pooled_embedding) dot weight + intercept",
+    "pool_m": 160,
+    "parity_correction": "Per 256x256 block, subtract the four parity means relative to their grand mean before pooling.",
+    "source": "s3://olmoearth/olmoearth-v1-3-embeddings/embeddings.zarr",
+    "endpoint": "https://data.source.coop"
+  },
+  "metrics": {
+    "oof_auc": 0.9099999999999999,
+    "oof_balanced_accuracy": 0.875,
+    "auc_seed_bootstrap_95": [
+      0.8461059626436782,
+      0.9648652073732719
+    ],
+    "folds": [
+      {
+        "region": "arizona",
+        "n": 15,
+        "auc": 0.9600000000000001,
+        "balanced_accuracy": 0.9
+      },
+      {
+        "region": "california",
+        "n": 15,
+        "auc": 0.98,
+        "balanced_accuracy": 0.95
+      },
+      {
+        "region": "nevada",
+        "n": 15,
+        "auc": 0.7200000000000001,
+        "balanced_accuracy": 0.7
+      },
+      {
+        "region": "pacific_northwest",
+        "n": 15,
+        "auc": 0.92,
+        "balanced_accuracy": 0.9
+      },
+      {
+        "region": "rockies",
+        "n": 15,
+        "auc": 0.8400000000000001,
+        "balanced_accuracy": 0.9
+      },
+      {
+        "region": "utah",
+        "n": 15,
+        "auc": 0.9600000000000001,
+        "balanced_accuracy": 0.9
+      }
+    ],
+    "validation": "Leave one geographic group out; all labels in each group held out. Bootstrap is by seed, not a population confidence interval.",
+    "contrasts": {
+      "ordinary developed control": {
+        "n": 60,
+        "auc": 0.9833333333333334,
+        "balanced_accuracy": 0.9333333333333333
+      },
+      "ordinary open-land control": {
+        "n": 60,
+        "auc": 0.8366666666666667,
+        "balanced_accuracy": 0.8166666666666667
+      }
+    }
+  },
+  "seeds": [
+    {
+      "id": "seed-00",
+      "name": "Delicate Arch",
+      "lat": 38.7436,
+      "lon": -109.4993,
+      "label": 1,
+      "group": "utah",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Arches_National_Park",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        63041,
+        521332
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.3613795042037964,
+      "oof_score": 0.32224130630493164
+    },
+    {
+      "id": "seed-01",
+      "name": "Bryce Amphitheater",
+      "lat": 37.6225,
+      "lon": -112.1653,
+      "label": 1,
+      "group": "utah",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Bryce_Canyon_National_Park",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        39716,
+        533814
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.3279803991317749,
+      "oof_score": 0.2988717555999756
+    },
+    {
+      "id": "seed-02",
+      "name": "Zion Canyon",
+      "lat": 37.2595,
+      "lon": -112.9507,
+      "label": 1,
+      "group": "utah",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Zion_National_Park",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        32701,
+        537727
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.31014901399612427,
+      "oof_score": 0.2893224358558655
+    },
+    {
+      "id": "seed-03",
+      "name": "Capitol Reef Waterpocket Fold",
+      "lat": 38.282,
+      "lon": -111.247,
+      "label": 1,
+      "group": "utah",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Capitol_Reef_National_Park",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        47839,
+        526558
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.08324266970157623,
+      "oof_score": 0.06050236523151398
+    },
+    {
+      "id": "seed-04",
+      "name": "Dead Horse Point",
+      "lat": 38.47,
+      "lon": -109.74,
+      "label": 1,
+      "group": "utah",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        60991,
+        524400
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.3313799500465393,
+      "oof_score": 0.29823386669158936
+    },
+    {
+      "id": "seed-05",
+      "name": "Salt Lake warehouse district",
+      "lat": 40.755,
+      "lon": -111.96,
+      "label": 0,
+      "group": "utah",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=40.755&mlon=-111.96#map=16/40.755/-111.96",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        12,
+        41896,
+        499071
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.32779502868652344,
+      "oof_score": -0.2743415832519531
+    },
+    {
+      "id": "seed-06",
+      "name": "Orem retail corridor",
+      "lat": 40.273,
+      "lon": -111.684,
+      "label": 0,
+      "group": "utah",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=40.273&mlon=-111.684#map=16/40.273/-111.684",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        12,
+        44184,
+        504443
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.31067389249801636,
+      "oof_score": -0.2508276700973511
+    },
+    {
+      "id": "seed-07",
+      "name": "St George commercial strip",
+      "lat": 37.112,
+      "lon": -113.551,
+      "label": 0,
+      "group": "utah",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=37.112&mlon=-113.551#map=16/37.112/-113.551",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        12,
+        27333,
+        539237
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.09157192707061768,
+      "oof_score": -0.07650569081306458
+    },
+    {
+      "id": "seed-08",
+      "name": "Logan suburban grid",
+      "lat": 41.758,
+      "lon": -111.823,
+      "label": 0,
+      "group": "utah",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=41.758&mlon=-111.823#map=16/41.758/-111.823",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        12,
+        43158,
+        487948
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.22782441973686218,
+      "oof_score": -0.20011168718338013
+    },
+    {
+      "id": "seed-09",
+      "name": "Price commercial district",
+      "lat": 39.596,
+      "lon": -110.81,
+      "label": 0,
+      "group": "utah",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=39.596&mlon=-110.81#map=16/39.596/-110.81",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        12,
+        51631,
+        511978
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.280749648809433,
+      "oof_score": -0.23768147826194763
+    },
+    {
+      "id": "seed-10",
+      "name": "Grand Canyon South Rim",
+      "lat": 36.061,
+      "lon": -112.108,
+      "label": 1,
+      "group": "arizona",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Grand_Canyon",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        40021,
+        551143
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.29481542110443115,
+      "oof_score": 0.23636217415332794
+    },
+    {
+      "id": "seed-11",
+      "name": "Horseshoe Bend",
+      "lat": 36.879,
+      "lon": -111.51,
+      "label": 1,
+      "group": "arizona",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        45455,
+        542114
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.339882493019104,
+      "oof_score": 0.3564390540122986
+    },
+    {
+      "id": "seed-12",
+      "name": "Cathedral Rock",
+      "lat": 34.826,
+      "lon": -111.789,
+      "label": 1,
+      "group": "arizona",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Cathedral_Rock",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        42784,
+        564868
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.2170969396829605,
+      "oof_score": 0.16212047636508942
+    },
+    {
+      "id": "seed-13",
+      "name": "Monument Valley",
+      "lat": 36.983,
+      "lon": -110.113,
+      "label": 1,
+      "group": "arizona",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Monument_Valley",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        57894,
+        540936
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.057780921459198,
+      "oof_score": -0.0724438950419426
+    },
+    {
+      "id": "seed-14",
+      "name": "Chiricahua hoodoos",
+      "lat": 32.01,
+      "lon": -109.33,
+      "label": 1,
+      "group": "arizona",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        65773,
+        595995
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.3075830340385437,
+      "oof_score": 0.24529065191745758
+    },
+    {
+      "id": "seed-15",
+      "name": "Phoenix warehouse district",
+      "lat": 33.43,
+      "lon": -112.147,
+      "label": 0,
+      "group": "arizona",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=33.43&mlon=-112.147#map=16/33.43/-112.147",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        12,
+        39337,
+        580317
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.3559096157550812,
+      "oof_score": -0.31701940298080444
+    },
+    {
+      "id": "seed-16",
+      "name": "Mesa suburban grid",
+      "lat": 33.404,
+      "lon": -111.771,
+      "label": 0,
+      "group": "arizona",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=33.404&mlon=-111.771#map=16/33.404/-111.771",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        12,
+        42830,
+        580637
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.36356914043426514,
+      "oof_score": -0.31367307901382446
+    },
+    {
+      "id": "seed-17",
+      "name": "Tucson commercial corridor",
+      "lat": 32.221,
+      "lon": -110.969,
+      "label": 0,
+      "group": "arizona",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=32.221&mlon=-110.969#map=16/32.221/-110.969",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        12,
+        50292,
+        593778
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.25143980979919434,
+      "oof_score": -0.21650806069374084
+    },
+    {
+      "id": "seed-18",
+      "name": "Casa Grande retail",
+      "lat": 32.879,
+      "lon": -111.715,
+      "label": 0,
+      "group": "arizona",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=32.879&mlon=-111.715#map=16/32.879/-111.715",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        12,
+        43311,
+        586462
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.3729685842990875,
+      "oof_score": -0.3270949423313141
+    },
+    {
+      "id": "seed-19",
+      "name": "Yuma suburban grid",
+      "lat": 32.682,
+      "lon": -114.64,
+      "label": 0,
+      "group": "arizona",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=32.682&mlon=-114.64#map=16/32.682/-114.64",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        11,
+        72127,
+        588422
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.3606834411621094,
+      "oof_score": -0.3138117790222168
+    },
+    {
+      "id": "seed-20",
+      "name": "Yosemite Valley",
+      "lat": 37.736,
+      "lon": -119.6,
+      "label": 1,
+      "group": "california",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Yosemite_Valley",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        11,
+        27089,
+        532301
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.2813987731933594,
+      "oof_score": 0.2519060969352722
+    },
+    {
+      "id": "seed-21",
+      "name": "Emerald Bay",
+      "lat": 38.954,
+      "lon": -120.11,
+      "label": 1,
+      "group": "california",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Emerald_Bay_State_Park",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        10,
+        75043,
+        518707
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.3439369797706604,
+      "oof_score": 0.29634249210357666
+    },
+    {
+      "id": "seed-22",
+      "name": "Big Sur coast",
+      "lat": 36.273,
+      "lon": -121.813,
+      "label": 1,
+      "group": "california",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Big_Sur",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        10,
+        60661,
+        548783
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.2661217451095581,
+      "oof_score": 0.21401794254779816
+    },
+    {
+      "id": "seed-23",
+      "name": "Lassen volcanic summit",
+      "lat": 40.488,
+      "lon": -121.505,
+      "label": 1,
+      "group": "california",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Lassen_Peak",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        10,
+        62670,
+        501972
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.25797170400619507,
+      "oof_score": 0.24348653852939606
+    },
+    {
+      "id": "seed-24",
+      "name": "Joshua Tree rock formations",
+      "lat": 34.012,
+      "lon": -116.169,
+      "label": 1,
+      "group": "california",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Joshua_Tree_National_Park",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        11,
+        57673,
+        573892
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.024921581149101257,
+      "oof_score": 0.009878769516944885
+    },
+    {
+      "id": "seed-25",
+      "name": "Fresno warehouse district",
+      "lat": 36.706,
+      "lon": -119.774,
+      "label": 0,
+      "group": "california",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=36.706&mlon=-119.774#map=16/36.706/-119.774",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        11,
+        25220,
+        543687
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.41614192724227905,
+      "oof_score": -0.360632061958313
+    },
+    {
+      "id": "seed-26",
+      "name": "Bakersfield suburban grid",
+      "lat": 35.355,
+      "lon": -119.037,
+      "label": 0,
+      "group": "california",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=35.355&mlon=-119.037#map=16/35.355/-119.037",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        11,
+        31491,
+        558840
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.5315979719161987,
+      "oof_score": -0.475164532661438
+    },
+    {
+      "id": "seed-27",
+      "name": "Stockton industrial district",
+      "lat": 37.931,
+      "lon": -121.287,
+      "label": 0,
+      "group": "california",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=37.931&mlon=-121.287#map=16/37.931/-121.287",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        10,
+        65054,
+        530317
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.45057058334350586,
+      "oof_score": -0.4070620536804199
+    },
+    {
+      "id": "seed-28",
+      "name": "Modesto retail corridor",
+      "lat": 37.687,
+      "lon": -121.006,
+      "label": 0,
+      "group": "california",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=37.687&mlon=-121.006#map=16/37.687/-121.006",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        10,
+        67581,
+        532976
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.4079558253288269,
+      "oof_score": -0.3517106771469116
+    },
+    {
+      "id": "seed-29",
+      "name": "Riverside commercial grid",
+      "lat": 33.947,
+      "lon": -117.398,
+      "label": 0,
+      "group": "california",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=33.947&mlon=-117.398#map=16/33.947/-117.398",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        11,
+        46322,
+        574636
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.34843355417251587,
+      "oof_score": -0.3231077492237091
+    },
+    {
+      "id": "seed-30",
+      "name": "Valley of Fire",
+      "lat": 36.482,
+      "lon": -114.532,
+      "label": 1,
+      "group": "nevada",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Valley_of_Fire_State_Park",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        11,
+        72109,
+        546247
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.21058706939220428,
+      "oof_score": 0.1701149195432663
+    },
+    {
+      "id": "seed-31",
+      "name": "Red Rock Canyon",
+      "lat": 36.135,
+      "lon": -115.427,
+      "label": 1,
+      "group": "nevada",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Red_Rock_Canyon_National_Conservation_Area",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        11,
+        64153,
+        550265
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.12612974643707275,
+      "oof_score": -0.12309486418962479
+    },
+    {
+      "id": "seed-32",
+      "name": "Great Basin alpine lakes",
+      "lat": 38.936,
+      "lon": -114.322,
+      "label": 1,
+      "group": "nevada",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Great_Basin_National_Park",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        11,
+        73211,
+        518963
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.3932393193244934,
+      "oof_score": 0.3666298985481262
+    },
+    {
+      "id": "seed-33",
+      "name": "Sand Harbor",
+      "lat": 39.198,
+      "lon": -119.931,
+      "label": 1,
+      "group": "nevada",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Sand_Harbor",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        11,
+        24688,
+        515987
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.1825784295797348,
+      "oof_score": 0.18220515549182892
+    },
+    {
+      "id": "seed-34",
+      "name": "Cathedral Gorge",
+      "lat": 37.824,
+      "lon": -114.414,
+      "label": 1,
+      "group": "nevada",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Cathedral_Gorge_State_Park",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        11,
+        72760,
+        531328
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.059998683631420135,
+      "oof_score": -0.08788131922483444
+    },
+    {
+      "id": "seed-35",
+      "name": "Las Vegas warehouse grid",
+      "lat": 36.23,
+      "lon": -115.112,
+      "label": 0,
+      "group": "nevada",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=36.23&mlon=-115.112#map=16/36.23/-115.112",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        11,
+        66967,
+        549160
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.24311505258083344,
+      "oof_score": -0.21199865639209747
+    },
+    {
+      "id": "seed-36",
+      "name": "Henderson retail corridor",
+      "lat": 36.058,
+      "lon": -115.041,
+      "label": 0,
+      "group": "nevada",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=36.058&mlon=-115.041#map=16/36.058/-115.041",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        11,
+        67644,
+        551056
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.29638779163360596,
+      "oof_score": -0.27132952213287354
+    },
+    {
+      "id": "seed-37",
+      "name": "Reno industrial district",
+      "lat": 39.531,
+      "lon": -119.746,
+      "label": 0,
+      "group": "nevada",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=39.531&mlon=-119.746#map=16/39.531/-119.746",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        11,
+        26398,
+        512341
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.1994391679763794,
+      "oof_score": -0.1571158468723297
+    },
+    {
+      "id": "seed-38",
+      "name": "Sparks warehouse district",
+      "lat": 39.539,
+      "lon": -119.707,
+      "label": 0,
+      "group": "nevada",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=39.539&mlon=-119.707#map=16/39.539/-119.707",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        11,
+        26736,
+        512262
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.2565039396286011,
+      "oof_score": -0.21517373621463776
+    },
+    {
+      "id": "seed-39",
+      "name": "Carson City commercial strip",
+      "lat": 39.132,
+      "lon": -119.766,
+      "label": 0,
+      "group": "nevada",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=39.132&mlon=-119.766#map=16/39.132/-119.766",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        11,
+        26091,
+        516765
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.13472795486450195,
+      "oof_score": -0.0964452251791954
+    },
+    {
+      "id": "seed-40",
+      "name": "Crater Lake",
+      "lat": 42.945,
+      "lon": -122.1,
+      "label": 1,
+      "group": "pacific_northwest",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Crater_Lake",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        10,
+        57342,
+        474761
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.1918519288301468,
+      "oof_score": 0.12373259663581848
+    },
+    {
+      "id": "seed-41",
+      "name": "Mount Rainier Paradise",
+      "lat": 46.79,
+      "lon": -121.735,
+      "label": 1,
+      "group": "pacific_northwest",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Paradise,_Washington",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        10,
+        59654,
+        432011
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.20846115052700043,
+      "oof_score": 0.18312060832977295
+    },
+    {
+      "id": "seed-42",
+      "name": "Smith Rock",
+      "lat": 44.367,
+      "lon": -121.137,
+      "label": 1,
+      "group": "pacific_northwest",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Smith_Rock_State_Park",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        10,
+        64844,
+        458839
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.09329201281070709,
+      "oof_score": 0.09609177708625793
+    },
+    {
+      "id": "seed-43",
+      "name": "Columbia River Gorge",
+      "lat": 45.577,
+      "lon": -122.115,
+      "label": 1,
+      "group": "pacific_northwest",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Columbia_River_Gorge",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        10,
+        56904,
+        445528
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.3304765224456787,
+      "oof_score": 0.3225514590740204
+    },
+    {
+      "id": "seed-44",
+      "name": "Cannon Beach Haystack Rock",
+      "lat": 45.884,
+      "lon": -123.968,
+      "label": 1,
+      "group": "pacific_northwest",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Haystack_Rock",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        10,
+        42488,
+        442110
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.08865353465080261,
+      "oof_score": 0.042751818895339966
+    },
+    {
+      "id": "seed-45",
+      "name": "Portland warehouse district",
+      "lat": 45.568,
+      "lon": -122.708,
+      "label": 0,
+      "group": "pacific_northwest",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=45.568&mlon=-122.708#map=16/45.568/-122.708",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        10,
+        52278,
+        445662
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.2703702449798584,
+      "oof_score": -0.2627856135368347
+    },
+    {
+      "id": "seed-46",
+      "name": "Salem suburban grid",
+      "lat": 44.933,
+      "lon": -123.001,
+      "label": 0,
+      "group": "pacific_northwest",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=44.933&mlon=-123.001#map=16/44.933/-123.001",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        10,
+        49992,
+        452721
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.367118239402771,
+      "oof_score": -0.31901153922080994
+    },
+    {
+      "id": "seed-47",
+      "name": "Eugene retail district",
+      "lat": 44.087,
+      "lon": -123.108,
+      "label": 0,
+      "group": "pacific_northwest",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=44.087&mlon=-123.108#map=16/44.087/-123.108",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        10,
+        49135,
+        462117
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.2230946570634842,
+      "oof_score": -0.21822196245193481
+    },
+    {
+      "id": "seed-48",
+      "name": "Tacoma warehouse district",
+      "lat": 47.241,
+      "lon": -122.385,
+      "label": 0,
+      "group": "pacific_northwest",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=47.241&mlon=-122.385#map=16/47.241/-122.385",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        10,
+        54654,
+        427059
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.28173375129699707,
+      "oof_score": -0.2679547667503357
+    },
+    {
+      "id": "seed-49",
+      "name": "Spokane commercial corridor",
+      "lat": 47.674,
+      "lon": -117.347,
+      "label": 0,
+      "group": "pacific_northwest",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=47.674&mlon=-117.347#map=16/47.674/-117.347",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        11,
+        47395,
+        422259
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.2602396011352539,
+      "oof_score": -0.23244771361351013
+    },
+    {
+      "id": "seed-50",
+      "name": "Maroon Bells",
+      "lat": 39.071,
+      "lon": -106.989,
+      "label": 1,
+      "group": "rockies",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Maroon_Bells",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        13,
+        32793,
+        517618
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.326851487159729,
+      "oof_score": 0.29607582092285156
+    },
+    {
+      "id": "seed-51",
+      "name": "Garden of the Gods",
+      "lat": 38.878,
+      "lon": -104.87,
+      "label": 1,
+      "group": "rockies",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Garden_of_the_Gods",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        13,
+        51127,
+        519947
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.027033865451812744,
+      "oof_score": 0.02927638590335846
+    },
+    {
+      "id": "seed-52",
+      "name": "Grand Teton Jenny Lake",
+      "lat": 43.754,
+      "lon": -110.731,
+      "label": 1,
+      "group": "rockies",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Jenny_Lake",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        52165,
+        465813
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.27047479152679443,
+      "oof_score": 0.2088507115840912
+    },
+    {
+      "id": "seed-53",
+      "name": "Yellowstone Grand Prismatic Spring",
+      "lat": 44.525,
+      "lon": -110.838,
+      "label": 1,
+      "group": "rockies",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Grand_Prismatic_Spring",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        12,
+        51287,
+        457252
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.1595603972673416,
+      "oof_score": 0.09662774205207825
+    },
+    {
+      "id": "seed-54",
+      "name": "Great Sand Dunes",
+      "lat": 37.756,
+      "lon": -105.514,
+      "label": 1,
+      "group": "rockies",
+      "category": "scenic landmark",
+      "source": "https://en.wikipedia.org/wiki/Great_Sand_Dunes_National_Park_and_Preserve",
+      "label_basis": "Author-curated landscape example; subjective scenic label",
+      "pixel": [
+        13,
+        45472,
+        532385
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.07317796349525452,
+      "oof_score": 0.002992883324623108
+    },
+    {
+      "id": "seed-55",
+      "name": "Denver warehouse district",
+      "lat": 39.786,
+      "lon": -104.98,
+      "label": 0,
+      "group": "rockies",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=39.786&mlon=-104.98#map=16/39.786/-104.98",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        13,
+        50171,
+        509871
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.28106769919395447,
+      "oof_score": -0.2886931300163269
+    },
+    {
+      "id": "seed-56",
+      "name": "Colorado Springs retail grid",
+      "lat": 38.851,
+      "lon": -104.725,
+      "label": 0,
+      "group": "rockies",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=38.851&mlon=-104.725#map=16/38.851/-104.725",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        13,
+        52386,
+        520244
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.0812440812587738,
+      "oof_score": 0.12805989384651184
+    },
+    {
+      "id": "seed-57",
+      "name": "Pueblo commercial grid",
+      "lat": 38.304,
+      "lon": -104.611,
+      "label": 0,
+      "group": "rockies",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=38.304&mlon=-104.611#map=16/38.304/-104.611",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        13,
+        53401,
+        526310
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.277212917804718,
+      "oof_score": -0.2569623291492462
+    },
+    {
+      "id": "seed-58",
+      "name": "Cheyenne industrial district",
+      "lat": 41.123,
+      "lon": -104.815,
+      "label": 0,
+      "group": "rockies",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=41.123&mlon=-104.815#map=16/41.123/-104.815",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        13,
+        51552,
+        495029
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.2525453567504883,
+      "oof_score": -0.2238001972436905
+    },
+    {
+      "id": "seed-59",
+      "name": "Casper suburban grid",
+      "lat": 42.834,
+      "lon": -106.288,
+      "label": 0,
+      "group": "rockies",
+      "category": "ordinary developed control",
+      "source": "https://www.openstreetmap.org/?mlat=42.834&mlon=-106.288#map=16/42.834/-106.288",
+      "label_basis": "Author-selected developed land-use control; ordinary is a task label, not a judgment of the community",
+      "pixel": [
+        13,
+        39473,
+        475953
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.15768200159072876,
+      "oof_score": -0.10911272466182709
+    },
+    {
+      "id": "seed-60",
+      "name": "Utah ordinary open landscape 1",
+      "lat": 39.3,
+      "lon": -113.0,
+      "label": 0,
+      "group": "utah",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=39.3&mlon=-113.0#map=16/39.3/-113.0",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        12,
+        32754,
+        515074
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.07362139970064163,
+      "oof_score": -0.00802411139011383
+    },
+    {
+      "id": "seed-61",
+      "name": "Utah ordinary open landscape 2",
+      "lat": 40.5,
+      "lon": -113.4,
+      "label": 0,
+      "group": "utah",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=40.5&mlon=-113.4#map=16/40.5/-113.4",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        12,
+        29662,
+        501669
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.04056943953037262,
+      "oof_score": 0.07856492698192596
+    },
+    {
+      "id": "seed-62",
+      "name": "Utah ordinary open landscape 3",
+      "lat": 39.2,
+      "lon": -112.75,
+      "label": 0,
+      "group": "utah",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=39.2&mlon=-112.75#map=16/39.2/-112.75",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        12,
+        34888,
+        516229
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.10072147101163864,
+      "oof_score": -0.05547099560499191
+    },
+    {
+      "id": "seed-63",
+      "name": "Utah ordinary open landscape 4",
+      "lat": 38.5,
+      "lon": -113.2,
+      "label": 0,
+      "group": "utah",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=38.5&mlon=-113.2#map=16/38.5/-113.2",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        12,
+        30815,
+        523913
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.07117350399494171,
+      "oof_score": 0.1220429390668869
+    },
+    {
+      "id": "seed-64",
+      "name": "Utah ordinary open landscape 5",
+      "lat": 40.0,
+      "lon": -113.7,
+      "label": 0,
+      "group": "utah",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=40.0&mlon=-113.7#map=16/40.0/-113.7",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        12,
+        26951,
+        507147
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.11648442596197128,
+      "oof_score": -0.12292375415563583
+    },
+    {
+      "id": "seed-65",
+      "name": "Arizona ordinary open landscape 1",
+      "lat": 32.95,
+      "lon": -112.75,
+      "label": 0,
+      "group": "arizona",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=32.95&mlon=-112.75#map=16/32.95/-112.75",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        12,
+        33641,
+        585561
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.27701473236083984,
+      "oof_score": -0.20359055697917938
+    },
+    {
+      "id": "seed-66",
+      "name": "Arizona ordinary open landscape 2",
+      "lat": 33.4,
+      "lon": -113.4,
+      "label": 0,
+      "group": "arizona",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=33.4&mlon=-113.4#map=16/33.4/-113.4",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        12,
+        27679,
+        580451
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.09403976798057556,
+      "oof_score": -0.04923795908689499
+    },
+    {
+      "id": "seed-67",
+      "name": "Arizona ordinary open landscape 3",
+      "lat": 32.5,
+      "lon": -111.3,
+      "label": 0,
+      "group": "arizona",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=32.5&mlon=-111.3#map=16/32.5/-111.3",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        12,
+        47181,
+        590682
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.3190896511077881,
+      "oof_score": -0.2704890966415405
+    },
+    {
+      "id": "seed-68",
+      "name": "Arizona ordinary open landscape 4",
+      "lat": 33.2,
+      "lon": -113.7,
+      "label": 0,
+      "group": "arizona",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=33.2&mlon=-113.7#map=16/33.2/-113.7",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        12,
+        24831,
+        582601
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.13502569496631622,
+      "oof_score": -0.06880000978708267
+    },
+    {
+      "id": "seed-69",
+      "name": "Arizona ordinary open landscape 5",
+      "lat": 32.8,
+      "lon": -111.9,
+      "label": 0,
+      "group": "arizona",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=32.8&mlon=-111.9#map=16/32.8/-111.9",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        12,
+        41573,
+        587324
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.2609517574310303,
+      "oof_score": -0.1446877419948578
+    },
+    {
+      "id": "seed-70",
+      "name": "California ordinary open landscape 1",
+      "lat": 35.1,
+      "lon": -117.7,
+      "label": 0,
+      "group": "california",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=35.1&mlon=-117.7#map=16/35.1/-117.7",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        43620,
+        561836
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.14652162790298462,
+      "oof_score": -0.13319134712219238
+    },
+    {
+      "id": "seed-71",
+      "name": "California ordinary open landscape 2",
+      "lat": 34.7,
+      "lon": -116.7,
+      "label": 0,
+      "group": "california",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=34.7&mlon=-116.7#map=16/34.7/-116.7",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        52747,
+        566290
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.06319086253643036,
+      "oof_score": 0.06390255689620972
+    },
+    {
+      "id": "seed-72",
+      "name": "California ordinary open landscape 3",
+      "lat": 35.6,
+      "lon": -117.3,
+      "label": 0,
+      "group": "california",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=35.6&mlon=-117.3#map=16/35.6/-117.3",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        47282,
+        556309
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.059143759310245514,
+      "oof_score": -0.03631135821342468
+    },
+    {
+      "id": "seed-73",
+      "name": "California ordinary open landscape 4",
+      "lat": 36.0,
+      "lon": -119.5,
+      "label": 0,
+      "group": "california",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=36.0&mlon=-119.5#map=16/36.0/-119.5",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        27465,
+        551588
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.5058073997497559,
+      "oof_score": -0.44111162424087524
+    },
+    {
+      "id": "seed-74",
+      "name": "California ordinary open landscape 5",
+      "lat": 36.5,
+      "lon": -120.1,
+      "label": 0,
+      "group": "california",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=36.5&mlon=-120.1#map=16/36.5/-120.1",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        10,
+        75974,
+        545939
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.3262825012207031,
+      "oof_score": -0.27341216802597046
+    },
+    {
+      "id": "seed-75",
+      "name": "Nevada ordinary open landscape 1",
+      "lat": 39.8,
+      "lon": -118.8,
+      "label": 0,
+      "group": "nevada",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=39.8&mlon=-118.8#map=16/39.8/-118.8",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        34590,
+        509561
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.07220250368118286,
+      "oof_score": -0.05617406964302063
+    },
+    {
+      "id": "seed-76",
+      "name": "Nevada ordinary open landscape 2",
+      "lat": 40.1,
+      "lon": -117.7,
+      "label": 0,
+      "group": "nevada",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=40.1&mlon=-117.7#map=16/40.1/-117.7",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        44033,
+        506362
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.10313429683446884,
+      "oof_score": -0.0796147882938385
+    },
+    {
+      "id": "seed-77",
+      "name": "Nevada ordinary open landscape 3",
+      "lat": 38.4,
+      "lon": -116.5,
+      "label": 0,
+      "group": "nevada",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=38.4&mlon=-116.5#map=16/38.4/-116.5",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        54365,
+        525240
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.23734234273433685,
+      "oof_score": 0.2617191672325134
+    },
+    {
+      "id": "seed-78",
+      "name": "Nevada ordinary open landscape 4",
+      "lat": 39.2,
+      "lon": -115.5,
+      "label": 0,
+      "group": "nevada",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=39.2&mlon=-115.5#map=16/39.2/-115.5",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        62952,
+        516267
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.29297059774398804,
+      "oof_score": 0.32349342107772827
+    },
+    {
+      "id": "seed-79",
+      "name": "Nevada ordinary open landscape 5",
+      "lat": 40.7,
+      "lon": -118.2,
+      "label": 0,
+      "group": "nevada",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=40.7&mlon=-118.2#map=16/40.7/-118.2",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        39862,
+        499657
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.11100871115922928,
+      "oof_score": -0.10151325166225433
+    },
+    {
+      "id": "seed-80",
+      "name": "Pacific Northwest ordinary open landscape 1",
+      "lat": 45.0,
+      "lon": -119.0,
+      "label": 0,
+      "group": "pacific_northwest",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=45.0&mlon=-119.0#map=16/45.0/-119.0",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        34236,
+        451782
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.14431379735469818,
+      "oof_score": 0.18023070693016052
+    },
+    {
+      "id": "seed-81",
+      "name": "Pacific Northwest ordinary open landscape 2",
+      "lat": 46.7,
+      "lon": -118.5,
+      "label": 0,
+      "group": "pacific_northwest",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=46.7&mlon=-118.5#map=16/46.7/-118.5",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        38532,
+        432980
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.4024936556816101,
+      "oof_score": -0.3714998662471771
+    },
+    {
+      "id": "seed-82",
+      "name": "Pacific Northwest ordinary open landscape 3",
+      "lat": 47.1,
+      "lon": -118.2,
+      "label": 0,
+      "group": "pacific_northwest",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=47.1&mlon=-118.2#map=16/47.1/-118.2",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        40894,
+        428574
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.2371150553226471,
+      "oof_score": -0.18521438539028168
+    },
+    {
+      "id": "seed-83",
+      "name": "Pacific Northwest ordinary open landscape 4",
+      "lat": 44.7,
+      "lon": -120.5,
+      "label": 0,
+      "group": "pacific_northwest",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=44.7&mlon=-120.5#map=16/44.7/-120.5",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        10,
+        69806,
+        455005
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.025211527943611145,
+      "oof_score": 0.05405290424823761
+    },
+    {
+      "id": "seed-84",
+      "name": "Pacific Northwest ordinary open landscape 5",
+      "lat": 46.3,
+      "lon": -119.6,
+      "label": 0,
+      "group": "pacific_northwest",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=46.3&mlon=-119.6#map=16/46.3/-119.6",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        11,
+        29976,
+        437205
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.27499455213546753,
+      "oof_score": -0.24171754717826843
+    },
+    {
+      "id": "seed-85",
+      "name": "Rockies ordinary open landscape 1",
+      "lat": 40.2,
+      "lon": -104.2,
+      "label": 0,
+      "group": "rockies",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=40.2&mlon=-104.2#map=16/40.2/-104.2",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        13,
+        56808,
+        505245
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.2652777433395386,
+      "oof_score": -0.15374326705932617
+    },
+    {
+      "id": "seed-86",
+      "name": "Rockies ordinary open landscape 2",
+      "lat": 39.3,
+      "lon": -103.8,
+      "label": 0,
+      "group": "rockies",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=39.3&mlon=-103.8#map=16/39.3/-103.8",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        13,
+        60347,
+        515196
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.29693013429641724,
+      "oof_score": -0.1820269376039505
+    },
+    {
+      "id": "seed-87",
+      "name": "Rockies ordinary open landscape 3",
+      "lat": 41.4,
+      "lon": -104.5,
+      "label": 0,
+      "group": "rockies",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=41.4&mlon=-104.5#map=16/41.4/-104.5",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        13,
+        54179,
+        491943
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.308474063873291,
+      "oof_score": -0.22148746252059937
+    },
+    {
+      "id": "seed-88",
+      "name": "Rockies ordinary open landscape 4",
+      "lat": 42.3,
+      "lon": -105.6,
+      "label": 0,
+      "group": "rockies",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=42.3&mlon=-105.6#map=16/42.3/-105.6",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        13,
+        45054,
+        481945
+      ],
+      "valid_fraction": 1.0,
+      "score": 0.3399006128311157,
+      "oof_score": 0.3860190510749817
+    },
+    {
+      "id": "seed-89",
+      "name": "Rockies ordinary open landscape 5",
+      "lat": 38.3,
+      "lon": -103.5,
+      "label": 0,
+      "group": "rockies",
+      "category": "ordinary open-land control",
+      "source": "https://www.openstreetmap.org/?mlat=38.3&mlon=-103.5#map=16/38.3/-103.5",
+      "label_basis": "Author-selected open terrain or rural land-use control; subjective task label, not a universal aesthetic judgment. No field visit.",
+      "pixel": [
+        13,
+        63116,
+        526255
+      ],
+      "valid_fraction": 1.0,
+      "score": -0.3308379650115967,
+      "oof_score": -0.22435998916625977
+    }
+  ],
+  "candidates": [
+    {
+      "region": "Escalante country",
+      "lon": -111.30353179875031,
+      "lat": 37.58162145784333,
+      "score": 0.34682828187942505,
+      "seed_distance_km": 76.05414390472436,
+      "valid_fraction": 1.0,
+      "percentile": 100.0,
+      "analogues": [
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.9266481892741145,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Horseshoe Bend",
+          "cosine": 0.8878179265902841,
+          "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.8649316162872338,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        }
+      ],
+      "id": "gem-01",
+      "name": "Escalante country \u00b7 01"
+    },
+    {
+      "region": "San Rafael backcountry",
+      "lon": -110.6119515534819,
+      "lat": 38.834476107182645,
+      "score": 0.33550888299942017,
+      "seed_distance_km": 82.6012123626217,
+      "valid_fraction": 1.0,
+      "percentile": 99.98,
+      "analogues": [
+        {
+          "name": "Bryce Amphitheater",
+          "cosine": 0.8673701638377624,
+          "source": "https://en.wikipedia.org/wiki/Bryce_Canyon_National_Park"
+        },
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.8611034290886413,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.8544581475696303,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        }
+      ],
+      "id": "gem-02",
+      "name": "San Rafael backcountry \u00b7 01"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.30528502754102,
+      "lat": 37.56719530506089,
+      "score": 0.31549298763275146,
+      "seed_distance_km": 76.02022118733125,
+      "valid_fraction": 1.0,
+      "percentile": 99.8,
+      "analogues": [
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.9671632523353721,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Horseshoe Bend",
+          "cosine": 0.932114328530453,
+          "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.926541452367658,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        }
+      ],
+      "id": "gem-03",
+      "name": "Escalante country \u00b7 02"
+    },
+    {
+      "region": "San Rafael backcountry",
+      "lon": -110.63040070656047,
+      "lat": 38.83165223100839,
+      "score": 0.314991295337677,
+      "seed_distance_km": 81.30196853698368,
+      "valid_fraction": 1.0,
+      "percentile": 99.79,
+      "analogues": [
+        {
+          "name": "Bryce Amphitheater",
+          "cosine": 0.8497017432945368,
+          "source": "https://en.wikipedia.org/wiki/Bryce_Canyon_National_Park"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.842515631999629,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        },
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.8378409042540094,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        }
+      ],
+      "id": "gem-04",
+      "name": "San Rafael backcountry \u00b7 02"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.36325402048246,
+      "lat": 37.56558900944838,
+      "score": 0.31479644775390625,
+      "seed_distance_km": 70.94734078108395,
+      "valid_fraction": 1.0,
+      "percentile": 99.78,
+      "analogues": [
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.9619053295334785,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.9389658365558942,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        },
+        {
+          "name": "Horseshoe Bend",
+          "cosine": 0.9144272120286933,
+          "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)"
+        }
+      ],
+      "id": "gem-05",
+      "name": "Escalante country \u00b7 03"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.35427061750877,
+      "lat": 37.581480085155185,
+      "score": 0.3088802695274353,
+      "seed_distance_km": 71.5938502953781,
+      "valid_fraction": 1.0,
+      "percentile": 99.63,
+      "analogues": [
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.9498378816307669,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.919220383590597,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        },
+        {
+          "name": "Horseshoe Bend",
+          "cosine": 0.9115736627418012,
+          "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)"
+        }
+      ],
+      "id": "gem-06",
+      "name": "Escalante country \u00b7 04"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.3541203960869,
+      "lat": 37.54975293956326,
+      "score": 0.30164021253585815,
+      "seed_distance_km": 71.9331362690139,
+      "valid_fraction": 1.0,
+      "percentile": 99.47,
+      "analogues": [
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.9387441416883937,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.9062153850798995,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        },
+        {
+          "name": "Horseshoe Bend",
+          "cosine": 0.9006976247010594,
+          "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)"
+        }
+      ],
+      "id": "gem-07",
+      "name": "Escalante country \u00b7 05"
+    },
+    {
+      "region": "San Rafael backcountry",
+      "lon": -110.59714730128121,
+      "lat": 38.84451893664379,
+      "score": 0.2978728413581848,
+      "seed_distance_km": 84.28983677764974,
+      "valid_fraction": 1.0,
+      "percentile": 99.39,
+      "analogues": [
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.8541369066069243,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.8503680030043815,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        },
+        {
+          "name": "Joshua Tree rock formations",
+          "cosine": 0.8446825712534434,
+          "source": "https://en.wikipedia.org/wiki/Joshua_Tree_National_Park"
+        }
+      ],
+      "id": "gem-08",
+      "name": "San Rafael backcountry \u00b7 03"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.32521432876487,
+      "lat": 37.56714208824377,
+      "score": 0.2971842288970947,
+      "seed_distance_km": 74.27078130374336,
+      "valid_fraction": 1.0,
+      "percentile": 99.36,
+      "analogues": [
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.9383577440437153,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Horseshoe Bend",
+          "cosine": 0.9282313002176478,
+          "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.9133854194079303,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        }
+      ],
+      "id": "gem-09",
+      "name": "Escalante country \u00b7 06"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.33966249848051,
+      "lat": 37.55700624959927,
+      "score": 0.29716718196868896,
+      "seed_distance_km": 73.11088286415615,
+      "valid_fraction": 1.0,
+      "percentile": 99.35,
+      "analogues": [
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.9158976792890041,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.9013045506118418,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        },
+        {
+          "name": "Horseshoe Bend",
+          "cosine": 0.8873420224184898,
+          "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)"
+        }
+      ],
+      "id": "gem-10",
+      "name": "Escalante country \u00b7 07"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.35034929168978,
+      "lat": 37.518036419218106,
+      "score": 0.29660868644714355,
+      "seed_distance_km": 72.45090199359397,
+      "valid_fraction": 1.0,
+      "percentile": 99.29,
+      "analogues": [
+        {
+          "name": "Grand Canyon South Rim",
+          "cosine": 0.8719973700320254,
+          "source": "https://en.wikipedia.org/wiki/Grand_Canyon"
+        },
+        {
+          "name": "Chiricahua hoodoos",
+          "cosine": 0.8328941694101222,
+          "source": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument"
+        },
+        {
+          "name": "Zion Canyon",
+          "cosine": 0.8198374475127839,
+          "source": "https://en.wikipedia.org/wiki/Zion_National_Park"
+        }
+      ],
+      "id": "gem-11",
+      "name": "Escalante country \u00b7 08"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.38299825954917,
+      "lat": 37.52947244128702,
+      "score": 0.29265302419662476,
+      "seed_distance_km": 69.71341365089273,
+      "valid_fraction": 1.0,
+      "percentile": 99.2,
+      "analogues": [
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.8623087825194986,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        },
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.8579688022237602,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Joshua Tree rock formations",
+          "cosine": 0.8215300838121832,
+          "source": "https://en.wikipedia.org/wiki/Joshua_Tree_National_Park"
+        }
+      ],
+      "id": "gem-12",
+      "name": "Escalante country \u00b7 09"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.36846904673533,
+      "lat": 37.52086562977428,
+      "score": 0.29113125801086426,
+      "seed_distance_km": 71.12967566609089,
+      "valid_fraction": 1.0,
+      "percentile": 99.13,
+      "analogues": [
+        {
+          "name": "Grand Canyon South Rim",
+          "cosine": 0.8679253921649588,
+          "source": "https://en.wikipedia.org/wiki/Grand_Canyon"
+        },
+        {
+          "name": "Chiricahua hoodoos",
+          "cosine": 0.8478905007334426,
+          "source": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument"
+        },
+        {
+          "name": "Zion Canyon",
+          "cosine": 0.8142301749114134,
+          "source": "https://en.wikipedia.org/wiki/Zion_National_Park"
+        }
+      ],
+      "id": "gem-13",
+      "name": "Escalante country \u00b7 10"
+    },
+    {
+      "region": "San Rafael backcountry",
+      "lon": -110.67466756068936,
+      "lat": 38.82601647798118,
+      "score": 0.288644015789032,
+      "seed_distance_km": 78.33311101255242,
+      "valid_fraction": 1.0,
+      "percentile": 98.95,
+      "analogues": [
+        {
+          "name": "Grand Canyon South Rim",
+          "cosine": 0.867946199123212,
+          "source": "https://en.wikipedia.org/wiki/Grand_Canyon"
+        },
+        {
+          "name": "Chiricahua hoodoos",
+          "cosine": 0.8304542837694198,
+          "source": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument"
+        },
+        {
+          "name": "Zion Canyon",
+          "cosine": 0.8239714091681436,
+          "source": "https://en.wikipedia.org/wiki/Zion_National_Park"
+        }
+      ],
+      "id": "gem-14",
+      "name": "San Rafael backcountry \u00b7 04"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.32891394189222,
+      "lat": 37.58443778262675,
+      "score": 0.28722769021987915,
+      "seed_distance_km": 73.80220362893245,
+      "valid_fraction": 1.0,
+      "percentile": 98.86,
+      "analogues": [
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.9325319014075545,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.9093690673897705,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        },
+        {
+          "name": "Horseshoe Bend",
+          "cosine": 0.8827354801323557,
+          "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)"
+        }
+      ],
+      "id": "gem-15",
+      "name": "Escalante country \u00b7 11"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.30696663291722,
+      "lat": 37.53546323250493,
+      "score": 0.2858285903930664,
+      "seed_distance_km": 75.1773289192555,
+      "valid_fraction": 1.0,
+      "percentile": 98.76,
+      "analogues": [
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.9150767986598292,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.9030171254568768,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        },
+        {
+          "name": "Horseshoe Bend",
+          "cosine": 0.8818329454536389,
+          "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)"
+        }
+      ],
+      "id": "gem-16",
+      "name": "Escalante country \u00b7 12"
+    },
+    {
+      "region": "San Rafael backcountry",
+      "lon": -110.60444216676258,
+      "lat": 38.85896233222684,
+      "score": 0.28461021184921265,
+      "seed_distance_km": 83.84560496414538,
+      "valid_fraction": 1.0,
+      "percentile": 98.65,
+      "analogues": [
+        {
+          "name": "Grand Canyon South Rim",
+          "cosine": 0.8879219644979688,
+          "source": "https://en.wikipedia.org/wiki/Grand_Canyon"
+        },
+        {
+          "name": "Zion Canyon",
+          "cosine": 0.859877482043577,
+          "source": "https://en.wikipedia.org/wiki/Zion_National_Park"
+        },
+        {
+          "name": "Chiricahua hoodoos",
+          "cosine": 0.8269940484567316,
+          "source": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument"
+        }
+      ],
+      "id": "gem-17",
+      "name": "San Rafael backcountry \u00b7 05"
+    },
+    {
+      "region": "San Rafael backcountry",
+      "lon": -110.65809932624985,
+      "lat": 38.821643598847466,
+      "score": 0.2809854745864868,
+      "seed_distance_km": 78.8867627173194,
+      "valid_fraction": 1.0,
+      "percentile": 98.29,
+      "analogues": [
+        {
+          "name": "Grand Canyon South Rim",
+          "cosine": 0.876246040330077,
+          "source": "https://en.wikipedia.org/wiki/Grand_Canyon"
+        },
+        {
+          "name": "Chiricahua hoodoos",
+          "cosine": 0.856363925448292,
+          "source": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument"
+        },
+        {
+          "name": "Zion Canyon",
+          "cosine": 0.8267370990130872,
+          "source": "https://en.wikipedia.org/wiki/Zion_National_Park"
+        }
+      ],
+      "id": "gem-18",
+      "name": "San Rafael backcountry \u00b7 06"
+    },
+    {
+      "region": "San Rafael backcountry",
+      "lon": -110.62129088705036,
+      "lat": 38.81143709043429,
+      "score": 0.2803218364715576,
+      "seed_distance_km": 80.16669168845026,
+      "valid_fraction": 1.0,
+      "percentile": 98.21,
+      "analogues": [
+        {
+          "name": "Grand Canyon South Rim",
+          "cosine": 0.7953738884543077,
+          "source": "https://en.wikipedia.org/wiki/Grand_Canyon"
+        },
+        {
+          "name": "Zion Canyon",
+          "cosine": 0.7789058308528471,
+          "source": "https://en.wikipedia.org/wiki/Zion_National_Park"
+        },
+        {
+          "name": "Chiricahua hoodoos",
+          "cosine": 0.7544577714004066,
+          "source": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument"
+        }
+      ],
+      "id": "gem-19",
+      "name": "San Rafael backcountry \u00b7 07"
+    },
+    {
+      "region": "San Rafael backcountry",
+      "lon": -110.6338805152628,
+      "lat": 38.87203491901781,
+      "score": 0.27942895889282227,
+      "seed_distance_km": 81.91785480907983,
+      "valid_fraction": 1.0,
+      "percentile": 98.17,
+      "analogues": [
+        {
+          "name": "Grand Canyon South Rim",
+          "cosine": 0.8795874824338252,
+          "source": "https://en.wikipedia.org/wiki/Grand_Canyon"
+        },
+        {
+          "name": "Chiricahua hoodoos",
+          "cosine": 0.8561948002418031,
+          "source": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument"
+        },
+        {
+          "name": "Zion Canyon",
+          "cosine": 0.8301937161136207,
+          "source": "https://en.wikipedia.org/wiki/Zion_National_Park"
+        }
+      ],
+      "id": "gem-20",
+      "name": "San Rafael backcountry \u00b7 08"
+    },
+    {
+      "region": "San Rafael backcountry",
+      "lon": -110.62660098463797,
+      "lat": 38.85326789120607,
+      "score": 0.27361005544662476,
+      "seed_distance_km": 83.33214835774392,
+      "valid_fraction": 1.0,
+      "percentile": 97.52,
+      "analogues": [
+        {
+          "name": "Grand Canyon South Rim",
+          "cosine": 0.8754627400067966,
+          "source": "https://en.wikipedia.org/wiki/Grand_Canyon"
+        },
+        {
+          "name": "Chiricahua hoodoos",
+          "cosine": 0.8585236628669869,
+          "source": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument"
+        },
+        {
+          "name": "Zion Canyon",
+          "cosine": 0.8412170991697083,
+          "source": "https://en.wikipedia.org/wiki/Zion_National_Park"
+        }
+      ],
+      "id": "gem-21",
+      "name": "San Rafael backcountry \u00b7 09"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.31968664279611,
+      "lat": 37.5455246800335,
+      "score": 0.27265697717666626,
+      "seed_distance_km": 75.0030692540944,
+      "valid_fraction": 1.0,
+      "percentile": 97.38,
+      "analogues": [
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.9109289643001688,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.9025590513880852,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        },
+        {
+          "name": "Horseshoe Bend",
+          "cosine": 0.891745766386863,
+          "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)"
+        }
+      ],
+      "id": "gem-22",
+      "name": "Escalante country \u00b7 13"
+    },
+    {
+      "region": "San Rafael backcountry",
+      "lon": -110.6065006707532,
+      "lat": 38.820039347268626,
+      "score": 0.2717951536178589,
+      "seed_distance_km": 81.74041406361205,
+      "valid_fraction": 1.0,
+      "percentile": 97.33,
+      "analogues": [
+        {
+          "name": "Grand Canyon South Rim",
+          "cosine": 0.8846350947329941,
+          "source": "https://en.wikipedia.org/wiki/Grand_Canyon"
+        },
+        {
+          "name": "Chiricahua hoodoos",
+          "cosine": 0.8523444588267204,
+          "source": "https://en.wikipedia.org/wiki/Chiricahua_National_Monument"
+        },
+        {
+          "name": "Zion Canyon",
+          "cosine": 0.8315487247483393,
+          "source": "https://en.wikipedia.org/wiki/Zion_National_Park"
+        }
+      ],
+      "id": "gem-23",
+      "name": "San Rafael backcountry \u00b7 10"
+    },
+    {
+      "region": "Escalante country",
+      "lon": -111.37782051200293,
+      "lat": 37.579964899171046,
+      "score": 0.2717514634132385,
+      "seed_distance_km": 69.53551374977272,
+      "valid_fraction": 1.0,
+      "percentile": 97.32,
+      "analogues": [
+        {
+          "name": "Dead Horse Point",
+          "cosine": 0.903249395087651,
+          "source": "https://en.wikipedia.org/wiki/Dead_Horse_Point_State_Park"
+        },
+        {
+          "name": "Delicate Arch",
+          "cosine": 0.9011562175029295,
+          "source": "https://en.wikipedia.org/wiki/Arches_National_Park"
+        },
+        {
+          "name": "Horseshoe Bend",
+          "cosine": 0.8900408163186719,
+          "source": "https://en.wikipedia.org/wiki/Horseshoe_Bend_(Arizona)"
+        }
+      ],
+      "id": "gem-24",
+      "name": "Escalante country \u00b7 14"
+    }
+  ],
+  "scan": {
+    "regions": [
+      {
+        "name": "San Rafael backcountry",
+        "lon": -110.65,
+        "lat": 38.85
+      },
+      {
+        "name": "Escalante country",
+        "lon": -111.35,
+        "lat": 37.55
+      },
+      {
+        "name": "Vermilion country",
+        "lon": -111.9,
+        "lat": 36.9
+      },
+      {
+        "name": "Basin and Range",
+        "lon": -115.15,
+        "lat": 38.55
+      }
+    ],
+    "block_extents": [
+      {
+        "region": "San Rafael backcountry",
+        "west": -110.684674832396,
+        "south": 38.85560188057913,
+        "east": -110.65505973751254,
+        "north": 38.878587685826616
+      },
+      {
+        "region": "San Rafael backcountry",
+        "west": -110.68477664105313,
+        "south": 38.83253253819985,
+        "east": -110.65517119918066,
+        "north": 38.85551850334442
+      },
+      {
+        "region": "San Rafael backcountry",
+        "west": -110.68487833312808,
+        "south": 38.80946310423644,
+        "east": -110.65528253320016,
+        "north": 38.83244922921868
+      },
+      {
+        "region": "San Rafael backcountry",
+        "west": -110.65517119918066,
+        "south": 38.85551850334442,
+        "east": -110.62554669582212,
+        "north": 38.878496781871064
+      },
+      {
+        "region": "San Rafael backcountry",
+        "west": -110.65528253320016,
+        "south": 38.83244922921868,
+        "east": -110.62566769361386,
+        "north": 38.85542767379015
+      },
+      {
+        "region": "San Rafael backcountry",
+        "west": -110.65539373973031,
+        "south": 38.80937986346536,
+        "east": -110.62578855283653,
+        "north": 38.83235847401832
+      },
+      {
+        "region": "San Rafael backcountry",
+        "west": -110.62566769361386,
+        "south": 38.85542767379015,
+        "east": -110.59603379287391,
+        "north": 38.878398419593
+      },
+      {
+        "region": "San Rafael backcountry",
+        "west": -110.62578855283653,
+        "south": 38.83235847401832,
+        "east": -110.59616432661612,
+        "north": 38.85532939201753
+      },
+      {
+        "region": "San Rafael backcountry",
+        "west": -110.62590927366293,
+        "south": 38.80928918257159,
+        "east": -110.59629471086905,
+        "north": 38.832260272699834
+      },
+      {
+        "region": "Escalante country",
+        "west": -111.38588916449682,
+        "south": 37.56335395073581,
+        "east": -111.35701286233461,
+        "north": 37.58651937931236
+      },
+      {
+        "region": "Escalante country",
+        "west": -111.38577021431047,
+        "south": 37.540279691457776,
+        "east": -111.35690272118505,
+        "north": 37.563445135229436
+      },
+      {
+        "region": "Escalante country",
+        "west": -111.385651399698,
+        "south": 37.51720534146754,
+        "east": -111.35679270557787,
+        "north": 37.54037080046083
+      },
+      {
+        "region": "Escalante country",
+        "west": -111.35690272118505,
+        "south": 37.563445135229436,
+        "east": -111.32801734855471,
+        "north": 37.58660351698377
+      },
+      {
+        "region": "Escalante country",
+        "west": -111.35679270557787,
+        "south": 37.54037080046083,
+        "east": -111.32791615233094,
+        "north": 37.56352920325944
+      },
+      {
+        "region": "Escalante country",
+        "west": -111.3566828153618,
+        "south": 37.517296375025815,
+        "east": -111.32781507145421,
+        "north": 37.540454798891716
+      },
+      {
+        "region": "Escalante country",
+        "west": -111.32791615233094,
+        "south": 37.56352920325944,
+        "east": -111.29902171928856,
+        "north": 37.58668053220502
+      },
+      {
+        "region": "Escalante country",
+        "west": -111.32781507145421,
+        "south": 37.540454798891716,
+        "east": -111.29892946812981,
+        "north": 37.563606154734465
+      },
+      {
+        "region": "Escalante country",
+        "west": -111.32771410578555,
+        "south": 37.51738030389984,
+        "east": -111.29883732212252,
+        "north": 37.54053168665922
+      },
+      {
+        "region": "Vermilion country",
+        "west": -111.95737028995642,
+        "south": 36.9139988155568,
+        "east": -111.92891462065604,
+        "north": 36.9373011192325
+      },
+      {
+        "region": "Vermilion country",
+        "west": -111.95708204277358,
+        "south": 36.89092472486683,
+        "east": -111.92863470365121,
+        "north": 36.914226930138035
+      },
+      {
+        "region": "Vermilion country",
+        "west": -111.95679412357218,
+        "south": 36.867850542430325,
+        "east": -111.92835510516677,
+        "north": 36.891152649386456
+      },
+      {
+        "region": "Vermilion country",
+        "west": -111.92863470365121,
+        "south": 36.914226930138035,
+        "east": -111.90017005690461,
+        "north": 36.937522468689444
+      },
+      {
+        "region": "Vermilion country",
+        "west": -111.92835510516677,
+        "south": 36.891152649386456,
+        "east": -111.89989879882573,
+        "north": 36.91444809521322
+      },
+      {
+        "region": "Vermilion country",
+        "west": -111.9280758248257,
+        "south": 36.86807827700091,
+        "east": -111.89962784941677,
+        "north": 36.89137363018919
+      },
+      {
+        "region": "Vermilion country",
+        "west": -111.89989879882573,
+        "south": 36.91444809521322,
+        "east": -111.87142518411731,
+        "north": 36.93773686261007
+      },
+      {
+        "region": "Vermilion country",
+        "west": -111.89962784941677,
+        "south": 36.89137363018919,
+        "east": -111.87116258533044,
+        "north": 36.914662310544976
+      },
+      {
+        "region": "Vermilion country",
+        "west": -111.89935720831234,
+        "south": 36.86829907364035,
+        "east": -111.87090028536234,
+        "north": 36.89158766703794
+      },
+      {
+        "region": "Basin and Range",
+        "west": -115.1873807934012,
+        "south": 38.56514853722721,
+        "east": -115.15742171453564,
+        "north": 38.58774872255403
+      },
+      {
+        "region": "Basin and Range",
+        "west": -115.18795990072721,
+        "south": 38.54208926529056,
+        "east": -115.15801086586731,
+        "north": 38.56468992542261
+      },
+      {
+        "region": "Basin and Range",
+        "west": -115.18853834605018,
+        "south": 38.519029894933865,
+        "east": -115.1585993436633,
+        "north": 38.54163102960719
+      },
+      {
+        "region": "Basin and Range",
+        "west": -115.15801086586731,
+        "south": 38.56468992542261,
+        "east": -115.12804308018902,
+        "north": 38.5872823644726
+      },
+      {
+        "region": "Basin and Range",
+        "west": -115.1585993436633,
+        "south": 38.54163102960719,
+        "east": -115.12864161186882,
+        "north": 38.564223949737666
+      },
+      {
+        "region": "Basin and Range",
+        "west": -115.15918714875676,
+        "south": 38.51857203513513,
+        "east": -115.12923945930171,
+        "north": 38.541165436077954
+      },
+      {
+        "region": "Basin and Range",
+        "west": -115.12864161186882,
+        "south": 38.564223949737666,
+        "east": -115.09866513093685,
+        "north": 38.586808636988714
+      },
+      {
+        "region": "Basin and Range",
+        "west": -115.12923945930171,
+        "south": 38.541165436077954,
+        "east": -115.09927304211688,
+        "north": 38.563750610687876
+      },
+      {
+        "region": "Basin and Range",
+        "west": -115.12983662333411,
+        "south": 38.5181068235212,
+        "east": -115.09988025834042,
+        "north": 38.54069248521771
+      }
+    ],
+    "blocks": 36,
+    "area_km2": 235.92960000000002,
+    "valid_pixels": 2359296,
+    "scored_cells": 9216,
+    "pool_m": 160,
+    "seed_exclusion_km": 5,
+    "min_separation_km": 1.5
+  },
+  "limitations": [
+    "Subjective, hand-curated labels; 30 landmarks, 30 developed controls and 30 ordinary open-land controls are a small convenience sample.",
+    "Labels can reflect land cover, region and water rather than aesthetic quality. Separate scenic-versus-open-land held-out metrics are reported; no human candidate preference study.",
+    "Candidates are unlabelled grid cells, not verified destinations. Hidden means at least 5 km from all training examples, not low visitor counts.",
+    "No access, ownership, safety, trail, ecological sensitivity or popularity assessment. Satellite imagery on the site can be newer than 2025 embeddings.",
+    "Four deliberately chosen western-US search regions; no global coverage claim. 160 m pooled footprints cannot resolve a viewpoint or trail."
+  ]
+}

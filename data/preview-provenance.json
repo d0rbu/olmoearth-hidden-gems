@@ -1,0 +1,266 @@
+[
+  {
+    "id": "gem-01",
+    "bbox": [
+      -111.33381627153678,
+      37.56962145784333,
+      -111.27324732596385,
+      37.593621457843334
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.33381627153678%2C37.56962145784333%2C-111.27324732596385%2C37.593621457843334&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-02",
+    "bbox": [
+      -110.6427618337027,
+      38.822476107182645,
+      -110.5811412732611,
+      38.846476107182646
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-110.6427618337027%2C38.822476107182645%2C-110.5811412732611%2C38.846476107182646&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-03",
+    "bbox": [
+      -111.33556363416993,
+      37.55519530506089,
+      -111.2750064209121,
+      37.57919530506089
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.33556363416993%2C37.55519530506089%2C-111.2750064209121%2C37.57919530506089&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-04",
+    "bbox": [
+      -110.66120976444584,
+      38.81965223100839,
+      -110.59959164867509,
+      38.84365223100839
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-110.66120976444584%2C38.81965223100839%2C-110.59959164867509%2C38.84365223100839&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-05",
+    "bbox": [
+      -111.39353197419706,
+      37.55358900944838,
+      -111.33297606676786,
+      37.57758900944838
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.39353197419706%2C37.55358900944838%2C-111.33297606676786%2C37.57758900944838&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-06",
+    "bbox": [
+      -111.38455503278801,
+      37.569480085155185,
+      -111.32398620222953,
+      37.593480085155186
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.38455503278801%2C37.569480085155185%2C-111.32398620222953%2C37.593480085155186&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-07",
+    "bbox": [
+      -111.38439191566157,
+      37.53775293956326,
+      -111.32384887651223,
+      37.56175293956326
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.38439191566157%2C37.53775293956326%2C-111.32384887651223%2C37.56175293956326&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-08",
+    "bbox": [
+      -110.62796193000659,
+      38.83251893664379,
+      -110.56633267255583,
+      38.85651893664379
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-110.62796193000659%2C38.83251893664379%2C-110.56633267255583%2C38.85651893664379&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-09",
+    "bbox": [
+      -111.35549291376181,
+      37.55514208824377,
+      -111.29493574376794,
+      37.57914208824377
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.35549291376181%2C37.55514208824377%2C-111.29493574376794%2C37.57914208824377&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-10",
+    "bbox": [
+      -111.36993696442323,
+      37.54500624959927,
+      -111.30938803253778,
+      37.56900624959927
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.36993696442323%2C37.54500624959927%2C-111.30938803253778%2C37.56900624959927&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-11",
+    "bbox": [
+      -111.38060794012054,
+      37.506036419218105,
+      -111.32009064325902,
+      37.530036419218106
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.38060794012054%2C37.506036419218105%2C-111.32009064325902%2C37.530036419218106&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-12",
+    "bbox": [
+      -111.41326154659582,
+      37.51747244128702,
+      -111.35273497250252,
+      37.54147244128702
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.41326154659582%2C37.51747244128702%2C-111.35273497250252%2C37.54147244128702&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-13",
+    "bbox": [
+      -111.39872884249019,
+      37.50886562977428,
+      -111.33820925098047,
+      37.53286562977428
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.39872884249019%2C37.50886562977428%2C-111.33820925098047%2C37.53286562977428&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-14",
+    "bbox": [
+      -110.70547417961147,
+      38.81401647798118,
+      -110.64386094176724,
+      38.83801647798118
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-110.70547417961147%2C38.81401647798118%2C-110.64386094176724%2C38.83801647798118&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-15",
+    "bbox": [
+      -111.35919956038,
+      37.57243778262675,
+      -111.29862832340444,
+      37.59643778262675
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.35919956038%2C37.57243778262675%2C-111.29862832340444%2C37.59643778262675&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-16",
+    "bbox": [
+      -111.33723235096443,
+      37.52346323250493,
+      -111.27670091487002,
+      37.54746323250493
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.33723235096443%2C37.52346323250493%2C-111.27670091487002%2C37.54746323250493&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-17",
+    "bbox": [
+      -110.63526305323295,
+      38.84696233222684,
+      -110.57362128029222,
+      38.87096233222684
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-110.63526305323295%2C38.84696233222684%2C-110.57362128029222%2C38.87096233222684&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-18",
+    "bbox": [
+      -110.68890405320917,
+      38.809643598847465,
+      -110.62729459929054,
+      38.833643598847466
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-110.68890405320917%2C38.809643598847465%2C-110.62729459929054%2C38.833643598847466&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-19",
+    "bbox": [
+      -110.65209119968034,
+      38.79943709043429,
+      -110.59049057442039,
+      38.82343709043429
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-110.65209119968034%2C38.79943709043429%2C-110.59049057442039%2C38.82343709043429&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-20",
+    "bbox": [
+      -110.6647070694424,
+      38.86003491901781,
+      -110.6030539610832,
+      38.88403491901781
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-110.6647070694424%2C38.86003491901781%2C-110.6030539610832%2C38.88403491901781&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-21",
+    "bbox": [
+      -110.65741940339772,
+      38.84126789120607,
+      -110.59578256587822,
+      38.865267891206074
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-110.65741940339772%2C38.84126789120607%2C-110.59578256587822%2C38.865267891206074&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-22",
+    "bbox": [
+      -111.3499564452973,
+      37.5335246800335,
+      -111.28941684029493,
+      37.5575246800335
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.3499564452973%2C37.5335246800335%2C-111.28941684029493%2C37.5575246800335&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-23",
+    "bbox": [
+      -110.63730470372288,
+      38.808039347268625,
+      -110.57569663778354,
+      38.832039347268626
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-110.63730470372288%2C38.808039347268625%2C-110.57569663778354%2C38.832039347268626&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  },
+  {
+    "id": "gem-24",
+    "bbox": [
+      -111.40810431096398,
+      37.567964899171045,
+      -111.34753671304188,
+      37.591964899171046
+    ],
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-111.40810431096398%2C37.567964899171045%2C-111.34753671304188%2C37.591964899171046&bboxSR=4326&imageSR=3857&size=640%2C320&format=jpg&f=image",
+    "attribution": "Esri World Imagery; Esri, Maxar, Earthstar Geographics, and the GIS User Community. Imagery dates vary; not the 2025 model input."
+  }
+]

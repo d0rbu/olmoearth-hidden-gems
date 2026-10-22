@@ -1,0 +1,8 @@
+[project]
+name = "olmoearth-hidden-gems"
+version = "0.1.0"
+description = "A reproducible scenic-interest direction in real OlmoEarth embeddings"
+requires-python = ">=3.11"
+dependencies = ["numpy", "zarr>=3", "obstore", "pyproj", "scikit-learn", "requests", "pillow"]
+[dependency-groups]
+dev = ["playwright"]
