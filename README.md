@@ -2,9 +2,7 @@
 
 An open experiment in using **real Ai2 OlmoEarth v1.3 satellite embeddings** to find candidate hidden landscapes. A 128-dimensional difference-of-means direction learns a subjective scenic-versus-ordinary contrast, then ranks unlabelled satellite footprints.
 
-**Live website:** https://slots-adaptive-tracked-contributing.trycloudflare.com
-
-This is a Cloudflare Quick Tunnel from the project host. It works while the host and tunnel are running; the hostname is temporary and can change after a restart. The repository contains the complete static website and published experiment outputs.
+**Website retired on 2026-10-23.** The local server and temporary Cloudflare tunnel have been shut down at the owner's request. The repository retains the complete static website, reproducible analysis, and published experiment outputs. Use the instructions below to run your own copy.
 
 ## Results
 
